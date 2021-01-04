@@ -23,5 +23,14 @@ describe('Pruebas en <Primera App />', () => {
         expect(wrapper).toMatchSnapshot( );
     });
 
+    test('debe mostrar el subtítulo enviado por props', () => {
+        const saludo = 'Hola, Soy Goku!';
+        const subtitulo = 'Subtítulo de prueba';
+        const wrapper = shallow(<PrimeraApp saludo={saludo} subtitulo={subtitulo} />);
+
+        const textoParrafo = wrapper.find('p').text();
+
+        expect(textoParrafo).toBe(subtitulo);
+    });
 
 });
