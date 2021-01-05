@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas en CounterApp Debe renderizar <CounterApp /> correctamente 1`] = `
+exports[`Pruebas en <CounterApp /> Debe mostrar el <CounterApp /> correctamente 1`] = `
 <Fragment>
   <h1>
     CounterApp
